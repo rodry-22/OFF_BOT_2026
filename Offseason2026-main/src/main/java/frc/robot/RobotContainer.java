@@ -13,7 +13,7 @@ import edu.wpi.first.wpilibj2.command.Commands;
 import frc.robot.configuration.Manifest.ControlsBuilder;
 import frc.robot.configuration.Manifest.DrivetrainBuilder;
 import frc.robot.configuration.bindings.DriverBindings;
-import frc.robot.modules.swerve.CommandSwerveDrivetrain;
+import frc.robot.core.modules.swerve.CommandSwerveDrivetrain;
 import frc.tests.EmptyTest;
 
 public class RobotContainer implements IRobotContainer{

@@ -2,7 +2,7 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // the MIT license file in the root directory of this project.
 
-package frc.robot.modules.swerve;
+package frc.robot.core.modules.swerve;
 
 import static edu.wpi.first.units.Units.MetersPerSecond;
 import static edu.wpi.first.units.Units.RadiansPerSecond;
