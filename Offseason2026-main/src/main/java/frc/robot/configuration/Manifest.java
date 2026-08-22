@@ -7,8 +7,8 @@ import com.stzteam.mars.operator.PS5OI;
 import com.stzteam.mars.operator.XboxOI;
 
 import frc.robot.configuration.constants.TunerConstants;
-import frc.robot.modules.swerve.CommandSwerveDrivetrain;
-import frc.robot.modules.swerve.SwerveTelemetry;
+import frc.robot.core.modules.swerve.CommandSwerveDrivetrain;
+import frc.robot.core.modules.swerve.SwerveTelemetry;
 
 public class Manifest {
 

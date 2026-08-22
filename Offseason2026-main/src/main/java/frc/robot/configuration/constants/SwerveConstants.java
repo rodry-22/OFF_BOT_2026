@@ -4,7 +4,7 @@
 
 package frc.robot.configuration.constants;
 
-import frc.robot.modules.swerve.SwerveRequestFactory;
+import frc.robot.core.modules.swerve.SwerveRequestFactory;
 
 public class SwerveConstants {
 
