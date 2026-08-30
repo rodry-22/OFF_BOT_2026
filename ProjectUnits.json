@@ -1,0 +1,7 @@
+{
+  "Indexer": {
+    "IndexerInputs.VelocityRPS": "RPS",
+    "IndexerIO.applyOutput(volts)": "Volts",
+    "IndexerInputs.appliedVolts": "Volts"
+  }
+}
