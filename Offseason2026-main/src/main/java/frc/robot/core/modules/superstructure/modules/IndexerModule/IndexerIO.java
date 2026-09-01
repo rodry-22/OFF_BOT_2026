@@ -10,24 +10,43 @@ public interface IndexerIO extends IO<IndexerIO.IndexerInputs> {
 
     public static class IndexerInputs extends Data<IndexerInputs> {
         @Unit(value = "Volts", group = "Indexer")
-        public double appliedVolts = 0;
+        public double rollerVolts = 0;
 
         @Unit(value = "RPS", group = "Indexer")
-        public double VelocityRPS = 0;
+        public double rollerRPS = 0;
 
-        public double Current = 0;
+        @Unit(value = "Volts", group = "Indexer")
+        public double indexerVolts = 0;
+
+        @Unit(value = "RPS", group = "Indexer")
+        public double indexerRPS = 0;
+
 
         @Override
         public IndexerInputs snapshot() {
             IndexerInputs clone = new IndexerInputs();
-            clone.appliedVolts = this.appliedVolts;
-            clone.VelocityRPS = this.VelocityRPS;
+            clone.rollerVolts = this.rollerVolts;
+            clone.rollerRPS = this.rollerRPS;
+            clone.indexerVolts = this.indexerVolts;
+            clone.indexerRPS = this.indexerRPS;
             return clone;
         }
     }
 
-    public void applyOutput(@Unit(value = "Volts", group = "Indexer") double volts);
+    public void applyRollers(@Unit(value = "Volts", group = "Indexer") double volts);
+    //Function to apply voltage to the rollers' motor
+    public void applyIndexer(@Unit(value = "Volts", group = "Indexer") double volts);
+    //Function to apply voltage to the indexer's motor
+
+    public void setRollers(@Unit(value = "RPS", group = "Indexer") double RPS);
+    //Function to set rollers with RPS
+    public void setIndexer(@Unit(value = "RPS", group = "Indexer") double RPS);
+    //Function to set index with RPS
+
+    public void stopRollers();
+    public void stopIndexer();
 
     public void stopAll();
+    //Function to stop both motors
 
 }
